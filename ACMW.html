@@ -1,0 +1,34 @@
+<!-- Aditi Singh 2020B1PS1895P -->
+<html>
+<head>
+    <title>ACMW Aditi Singh</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"></head>
+
+<body>
+<div class="container">
+    <div id="picture"></div>
+<ul>
+<li rel="one"><a href="#" data-text="Hello!">Hello!</a></li>
+<li rel="two"><a href="#" data-text="Namaste">Namaste</a></li>
+<li rel="three"><a href="#" data-text="Hola">Hola</a></li>
+<li rel="four"><a href="#" data-text="Salam">Salam</a></li>
+<li rel="five"><a href="#" data-text="Konnichiwa">Konnichiwa</a></li>
+<li rel="six"><a href="#" data-text="Olà">Olà</a></li>
+<li rel="seven"><a href="#" data-text="Hallo">Hallo</a></li>
+
+</ul>
+    </div>
+    
+    <script src= "https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <script type="text/javascript"> 
+    $('ul li').hover(function(){
+         $('#picture').removeClass().addClass( 
+             $(this).attr('rel'));
+              $(this).addClass('active').siblings()
+               .removeClass('active'); 
+    });
+         </script> 
+</body>
+</html>
